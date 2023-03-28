@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Outfit', sans-serif;
+    box-sizing: border-box;
+}
+
+.img-card .capa {
+    height: 100%;
+    width: 100%;
+    user-select: none;
+}
+
+.view {
+    max-height: 50px;
+    max-width: 50px;
+    display: none;
+    position: absolute;
+    
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.img-card {
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+    border-radius: 7px;
+    display: flex;
+    position: relative;
+    background-color: aqua;
+    cursor: pointer;
+}
+
+.img-card:hover .view {
+    display: block;
+}
+
+.img-card:hover .capa{
+    opacity: .56;
+}
+
+body {
+    background: hsl(217, 54%, 11%);
+}
+
+.modal-shadow {
+    padding: 2rem;
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.container-nft {
+    background: hsl(216, 50%, 16%);
+    height: auto;
+    width: 300px;
+    padding: 1.3rem;
+    border-radius: 9px;
+
+    animation-name: shadow-card;
+    animation-duration: 3s;
+}
+
+@keyframes shadow-card {
+    from {
+        scale: 0.8;
+        -webkit-box-shadow: 1px 1px 165px -1px rgba(84,84,232,1);
+        -moz-box-shadow: 1px 1px 165px -1px rgba(84,84,232,1);
+        box-shadow: 1px 1px 165px -1px rgba(84,84,232,1);
+    }
+
+    to {
+        box-shadow: 0;
+    }
+}
+
+.title {
+    margin-top: 1rem;
+}
+.title h1 {
+    font-size: 18px;
+    color: hsl(0, 0%, 100%);
+    cursor: pointer;
+}
+.title h1:hover {
+    color: hsl(178, 100%, 50%);
+}
+
+.desc {
+    margin-top: 1rem;
+}
+.desc p {
+    font-size: 15px;
+    color: hsl(215, 51%, 70%);
+    font-weight: 300;
+}
+
+.characteristics {
+    margin-top: 1.2rem;
+    margin-bottom: 1.2rem;
+    display: flex;
+    margin-top: .8rem;
+    width: 100%;
+}
+.characteristics .value {
+    display: inline-flex;
+    justify-content: left;
+    align-items: center;
+    gap: .5rem;
+    width: 50%;
+}
+.characteristics .value p {
+    color: hsl(178, 100%, 50%);
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.characteristics .time {
+    display: inline-flex;
+    justify-content: right;
+    align-items: center;
+    width: 50%;
+    gap: .5rem;
+    color: hsl(215, 51%, 70%);
+}
+
+.info-card {
+    border-bottom: 1px solid hsl(215, 32%, 27%);
+}
+
+.profile img {
+    height: auto;
+    width: 100%;
+    user-select: none;
+}
+
+.img-profile {
+    overflow: hidden;
+    display: flex;
+    height: 30px;
+    width: 30px;
+    border-radius: 5000px;
+    border: 1px solid hsl(0, 0%, 100%);
+}
+
+.profile {
+    display: flex;
+    margin-top: .6rem;
+    padding: .2rem 0px;
+    align-items: center;
+}
+
+.origin-card {
+    display: flex;
+    align-items: center;
+    margin-left: 1rem;
+}
+.origin-card p {
+    color: hsl(215, 51%, 70%);
+    font-size: 13px;
+}
+.origin-card h3 {
+    margin-left: .4rem;
+    font-size: 14px;
+    font-weight: 400;
+    color: hsl(0, 0%, 100%);
+    cursor: pointer;
+}
+
+.origin-card h3:hover {
+    color: hsl(178, 100%, 50%);
+}
