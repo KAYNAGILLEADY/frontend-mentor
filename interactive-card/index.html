@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Interactive card details form</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <main>
+    <section class="section-card">
+      <img class="color-background" src="./images/bg-main-desktop.png" alt="fundo seção cartões">
+      <div class="card-front">
+        <div class="logo-card">
+          <img src="./images/card-logo.svg" alt="logo do cartão">
+        </div>
+        <div class="card-number">
+          <p id="card-number">0000 0000 0000 0000</p>
+        </div>
+        <div class="infos">
+          <div class="author-name">
+            <p id="card-name">Jane Appleseed</p>
+          </div>
+          <div class="validity">
+            <p id="card-mouth">11</p>
+            <p>/</p>
+            <p id="card-year">23</p>
+          </div>
+        </div>
+      </div>
+      <div class="card-back">
+        <div class="cvc">
+          <p id="card-cvc">000</p>
+        </div>
+      </div>
+    </section>
+    <section class="section-form">
+      <div class="form">
+        <form action="post">
+          <div class="div-form">
+            <label for="name">Cardholder Name</label>
+            <div class="after">
+              <input id="name" class="input-large" name="name" type="text" placeholder="e.g. Jane Appleseed">
+            </div>
+            <p class="after-p"></p>
+          </div>
+          <div class="div-form">
+            <label for="number">Card Number</label>
+            <div class="after">
+              <input id="number" class="input-large" name="number" type="number" placeholder="e.g. 1234 5678 9123 0000">
+            </div>
+            <p class="after-p"></p>
+          </div>
+          <div class="div-form date-cvc">
+            <div>
+              <label for="number">Exp. Date (MM/YY)</label>
+              <div class="after">
+                <input id="mouth" name="date" type="number" placeholder="MM">
+                <input id="year" name="date" type="number" placeholder="YY">
+              </div>
+              <p class="after-p"></p>
+            </div>
+            <div class="div-cvc">
+              <label for="cvc">CVC</label>
+              <div class="after">
+                <input id="cvc" name="cvc" type="number" placeholder="e.g. 123">
+              </div>
+              <p class="after-p"></p>
+            </div>
+          </div>
+          <div class="button div-form">
+            <button type="submit" id="button"> Confirm </button>
+          </div>
+        </form>
+      </div>
+
+      <div class="finish">
+        <div class="imgcheck">
+          <img src="./images/icon-complete.svg" alt="completo">
+        </div>
+        <div class="finish-text">
+          <h2>THANK YOU!</h2>
+          <p>We've added your card details</p>
+        </div>
+        <div class="button">
+          <a href="https://kaynagilleady.github.io/frontend-mentor/interactive-card/">
+            <button>
+              Continue
+            </button>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="./script.js"></script>
+</body>
+</html>
